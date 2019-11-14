@@ -1,0 +1,55 @@
+.col-wrapper{width:960px; margin:0 auto;}
+.col{margin:0 10px; float:left; display:inline;}
+.col-670{width:670px;}
+.col-250{width:250px;}
+
+#container {
+ width: 980px; /* Ширина макета */
+ margin:  auto; /* Выравнивание по центру */
+}
+#nav {
+ width: 400px; /* Ширина левой колонки */
+ float: left;
+}
+#aside {
+ width: 200px; /* Ширина правой колонки */
+ float: right;
+}
+#content {
+ margin: 70px 200px; /* Отступ на ширину левой и правой колонки*/
+}
+
+.block1 { 
+height: 800px;    
+width: 350px; 
+    background: #0B243B;
+    padding: 20px;
+    padding-right: 20px; 
+    border: solid 1px black; 
+    float: left;
+   }
+header{
+ width: 100%;
+ background:#848484;
+ height: 90px;
+}
+h1 {
+  color: white;
+}
+h2{
+  color:white;
+}
+h3{color:white;
+}
+h4{color:#0B243B;
+}
+body {
+background:
+#C0C0C0 url(""); /* Цвет фона и путь к файлу */
+background-size: cover;
+color: #fff; /* Цвет текста */
+
+
+}
+
+
