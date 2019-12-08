@@ -1,0 +1,42 @@
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Switching basemaps</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <!-- Load Leaflet from CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet@2.3.2/dist/esri-leaflet.js" integrity="sha512-6LVib9wGnqVKIClCduEwsCub7iauLXpwrd5njR2J507m3A2a4HXJDLMiSZzjcksag3UluIfuW1KzuWVI5n/cuQ==" crossorigin=""></script>
+
+  </head>
+
+  <body>
+
+    <link rel="stylesheet" href="css/map.css">
+    <div id="map"></div>
+    <div id="basemaps-wrapper" class="leaflet-bar">
+      <select id="basemaps">
+        <option value="WorldMap">WorldMap</option>
+        <option value="Streets">Streets</option>
+        <option value="NationalGeographic">National Geographic</option>
+        <option value="Oceans">Oceans</option>
+        <option value="Gray">Gray</option>
+        <option value="DarkGray">Dark Gray</option>
+        <option value="Imagery">Imagery</option>
+        <option value="ImageryClarity">Imagery (Clarity)</option>
+        <option value="ImageryFirefly">Imagery (Firefly)</option>
+        <option value="ShadedRelief">Shaded Relief</option>
+        <option value="Physical">Physical</option>
+      </select>
+    </div>
+    <script>
+      var map = L.map('map').setView([-33.87, 150.77], 15);
+      < script src = "data/data.js" >
+    </script>
+    <script src="js/map.js"></script>
+    <script src="js/markery.js"></script>
+  </body>
+
+</html>
